@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    width: 40%;
+    border: 2px solid rgb(150, 143, 143);
+    background-color: rgb(243, 233, 220);
+    gap: 10px;
+}
+
+.card1 :first-child {
+color: rgb(184, 86, 86);
+}
+
+.card2 :nth-child(2) {
+    color: rgb(184, 86, 86)
+}
+
+.card ::before {
+    content: "✨"
+}
+
+button {
+background-color: azure;
+border: 2px solid black;
+padding: 15px;
+border-radius: 10px;
+cursor: pointer;
+}
+button:active {
+background-color: black;
+border: 2px solid azure;
+color: azure;
+}
+
+.card:hover {
+    transform: scale(115%);
+    box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.406);
+}
+
+.card1:hover {
+    rotate: 5deg;
+}
+
+.card2:hover {
+    rotate: -5deg;
+}
